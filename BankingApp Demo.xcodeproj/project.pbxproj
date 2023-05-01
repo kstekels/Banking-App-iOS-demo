@@ -33,6 +33,7 @@
 		1569CB9F29FBAD730024CAFC /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
 		1569CBA129FBB0740024CAFC /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
 		1569CBA329FBB1A80024CAFC /* AccountListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListVIew.swift; sourceTree = "<group>"; };
+		82921E0529FFB56200FCED1D /* BankingApp-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BankingApp-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 		1569CB8029FB992B0024CAFC /* BankingApp Demo */ = {
 			isa = PBXGroup;
 			children = (
+				82921E0529FFB56200FCED1D /* BankingApp-Demo-Info.plist */,
 				1569CB9429FB99670024CAFC /* Extensions */,
 				1569CB9329FB995F0024CAFC /* Models */,
 				1569CB9229FB99580024CAFC /* Screens */,
@@ -346,6 +348,7 @@
 				DEVELOPMENT_TEAM = 3X884PBRG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BankingApp-Demo-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -375,6 +378,7 @@
 				DEVELOPMENT_TEAM = 3X884PBRG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BankingApp-Demo-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

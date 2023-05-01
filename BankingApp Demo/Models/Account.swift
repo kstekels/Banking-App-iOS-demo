@@ -37,3 +37,11 @@ struct Account: Decodable {
         case balance = "balance"
     }
 }
+
+
+//{
+//        "id": "F4DE4148-B9AD-4113-BB3D-36A8D018475D",
+//        "name": "John Doe",
+//        "accountType": "checking",
+//        "balance": 200
+//}

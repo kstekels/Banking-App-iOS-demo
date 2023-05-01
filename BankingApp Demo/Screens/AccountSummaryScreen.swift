@@ -17,8 +17,16 @@ struct AccountSummaryScreen: View {
                 VStack {
                     AccountListVIew(accounts: accountSummaaryVM.accounts)
                         .frame(height: reader.size.height / 2)
-                    Text("\(accountSummaaryVM.total.formatAsCurrency())")
-                    Spacer()
+                    HStack{
+                        Text("\(accountSummaaryVM.total.formatAsCurrency())")
+                        Spacer()
+                        Button {
+                            accountSummaaryVM.getAllAccounts()
+                        } label: {
+                            Text("Refresh")
+                        }.buttonStyle(.bordered)
+
+                    }.padding(.horizontal)
                 }
             }
         }

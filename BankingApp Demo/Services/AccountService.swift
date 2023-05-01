@@ -28,6 +28,8 @@ class AccountService {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             
+            print(url)
+            
             guard let data = data, error == nil else {
                 return completion(.failure(.noData))
             }
