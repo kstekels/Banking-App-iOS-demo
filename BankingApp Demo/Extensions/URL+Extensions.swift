@@ -9,4 +9,8 @@ extension URL {
     static func urlForCreateAccounts() -> URL? {
         return URL(string: "http://127.0.0.1:3000/api/accounts")
     }
+    
+    static func urlForTransferFunds() -> URL? {
+        return URL(string: "http://127.0.0.1:3000/api/transfer")
+    }
 }
