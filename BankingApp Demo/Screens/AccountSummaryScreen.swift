@@ -10,29 +10,29 @@ import SwiftUI
 struct AccountSummaryScreen: View {
     
     @ObservedObject private var accountSummaaryVM = AccountSummaryViewModel()
+    @State private var isPresented: Bool = false
     
     var body: some View {
         VStack {
             GeometryReader { reader in
                 VStack {
                     AccountListVIew(accounts: accountSummaaryVM.accounts)
-                        .frame(height: reader.size.height / 2)
-                    HStack{
-                        Text("\(accountSummaaryVM.total.formatAsCurrency())")
-                        Spacer()
-                        Button {
-                            accountSummaaryVM.getAllAccounts()
-                        } label: {
-                            Text("Refresh")
-                        }.buttonStyle(.bordered)
-
-                    }.padding(.horizontal)
+                    //                        .frame(height: reader.size.height / 2)
+                    Text("\(accountSummaaryVM.total.formatAsCurrency())")
                 }
             }
         }
         .onAppear{
             accountSummaaryVM.getAllAccounts()
         }
+        .sheet(isPresented: $isPresented, onDismiss: {
+            accountSummaaryVM.getAllAccounts()
+        }, content: {
+            AddAccountScreen()
+        })
+        .navigationBarItems(trailing: Button("Add Account") {
+            self.isPresented = true
+        })
         .navigationTitle("Account Summary")
         .embedInNavigationView()
     }

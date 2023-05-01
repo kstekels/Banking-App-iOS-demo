@@ -6,7 +6,7 @@ extension URL {
          return URL(string: "http://127.0.0.1:3000/api/accounts")
     }
     
-//    static func urlForCreateAccounts() -> URL? {
-//        return URL(string: "https://coral-stealth-anglerfish.glitch.me/api/accounts")
-//    }
+    static func urlForCreateAccounts() -> URL? {
+        return URL(string: "http://127.0.0.1:3000/api/accounts")
+    }
 }
